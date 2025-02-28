@@ -27,35 +27,37 @@
                   <p class="name" style="text-align: center;">
                     Ansel Blume
                   </p>
-                  <p>I'm a PhD student at <a href="https://deepmind.google/">Google DeepMind</a> in San Francisco, where
-                    I lead a small team that mostly works on <a href="https://www.matthewtancik.com/nerf">NeRF</a>.
-                  </p>
+
                   <p>
-                    At Google I've worked on <a href="https://www.google.com/glass/start/">Glass</a>, <a
-                      href="https://ai.googleblog.com/2014/04/lens-blur-in-new-google-camera-app.html">Lens Blur</a>, <a
-                      href="https://ai.googleblog.com/2014/10/hdr-low-light-and-high-dynamic-range.html">HDR+</a>, <a
-                      href="https://blog.google/products/google-ar-vr/introducing-next-generation-jump/">VR</a>, <a
-                      href="https://ai.googleblog.com/2017/10/portrait-mode-on-pixel-2-and-pixel-2-xl.html">Portrait
-                      Mode</a>, <a
-                      href="https://ai.googleblog.com/2020/12/portrait-light-enhancing-portrait.html">Portrait
-                      Light</a>, and <a href="https://blog.google/products/maps/three-maps-updates-io-2022/">Maps</a>. I
-                    did my PhD at <a href="http://www.eecs.berkeley.edu/">UC Berkeley</a>, where I was advised by <a
-                      href="http://www.cs.berkeley.edu/~malik/">Jitendra Malik</a>. I've received the <a
-                      href="https://www.thecvf.com/?page_id=413#YRA">PAMI Young Researcher Award</a>.
+                    Hello! I'm a PhD candidate in Computer Science at the <a href="https://cs.illinois.edu/">University of Illinois Urbana-Champaign</a>
+                    where I am advised by <a href="https://blender.cs.illinois.edu/hengji.html">Heng Ji</a> and <a href="https://dhoiem.cs.illinois.edu">Derek Hoiem</a>.
+
+                    <br><br>
+
+                    Previously, I graduated from <a href="https://ucsd.edu//">UC San Diego</a> with majors in Computer Science and Applied Mathematics, where I worked with
+                    <a href="https://cseweb.ucsd.edu/~savage/">Stefan Savage</a> and <a href="https://cseweb.ucsd.edu/~voelker/">Geoff Voelker</a>
+                    in the <a href="https://www.sysnet.ucsd.edu/sysnet/">Systems and Networking Group</a>.
                   </p>
                   <p style="text-align:center">
                     <a href="mailto:blume5@illinois.edu">Email</a> &nbsp;/&nbsp;
-                    <a href="data/JonBarron-CV.pdf">CV</a> &nbsp;/&nbsp;
+                    <a href="data/Ansel Blume CV.pdf">CV</a> &nbsp;/&nbsp;
                     <!-- <a href="data/JonBarron-bio.txt">Bio</a> &nbsp;/&nbsp; -->
-                    <a href="https://scholar.google.com/citations?user=76677kkAAAAJ">Scholar</a> &nbsp;/&nbsp;
+                    <a href="https://scholar.google.com/citations?user=76677kkAAAAJ">Google Scholar</a> &nbsp;/&nbsp;
 
                     <a href="https://github.com/anselblume/">Github</a>
                   </p>
                 </td>
                 <td style="padding:2.5%;width:37%;max-width:37%">
-                  <a href="images/JonBarron.jpg"><img
-                      style="width:100%;max-width:100%;object-fit: cover; border-radius: 50%;" alt="profile photo"
-                      src="images/JonBarron.jpg" class="hoverZoomLink"></a>
+                  <!-- div for gray background -->
+                  <div style="width: 250px; height: 250px; background: #eceaea; border-radius: 50%; display: flex; align-items: center;">
+                    <a href="images/anselblume.jpg">
+                      <img src="images/anselblume.jpg" alt="profile photo" style="width:90%; border-radius: 50%; border: 0px solid #000000; margin: 0 auto; display: block;">
+                    </a>
+                  </div>
+                  <!-- <a href="images/anselblume.jpg"><img
+                      style="width:100%;max-width:100%;object-fit: cover; border-radius: 50%; border: 1px solid #000000;" alt="profile photo"
+                      src="images/anselblume.jpg" class="hoverZoomLink">
+                  </a> -->
                 </td>
               </tr>
             </tbody>
@@ -66,21 +68,256 @@
               <tr>
                 <td style="padding:16px;width:100%;vertical-align:middle">
                   <h2>Research</h2>
-                  <p>
-                    I'm interested in computer vision, deep learning, generative AI, and image processing. Most of my
-                    research is about inferring the physical world (shape, motion, color, light, etc) from images,
-                    usually with radiance fields. Some papers are <span class="highlight">highlighted</span>.
-                  </p>
+                    <p>
+                      My work is broadly in <strong>vision-language</strong> and <strong>structured neural reasoning</strong>.
+
+                      <br><br>
+
+                      Recently, this has included developing symbolic object representations with knowledge-graphs for image recognition, emphasizing
+                      interpretability via part decomposition and attribute recognition.
+
+                      <br><br>
+
+                      On the language side, I am especially interested in improving LLMs' capabilities to reason about problems not easily
+                      represented in language (e.g. reasoning about structured state spaces with applications in robotics).
+                    </p>
                 </td>
               </tr>
             </tbody>
           </table>
+
           <table
-            style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+            style="width:100%; border:0px; border-spacing:0px; border-collapse:separate; margin-right:auto; margin-left:auto;">
             <tbody>
 
+              <tr class="highlighted-paper">
+                <td class="image-box">
+                  <img src="images/search_and_detect.jpg" alt="Search and Detect">
+                </td>
+                <td class="paper-box">
+                  <a href="https://arxiv.org/abs/2409.18733">
+                    <span class="papertitle">Search and Detect: Training-Free Long Tail Object Detection via Web-Image Retrieval</span>
+                  </a>
 
-              <tr onmouseout="simvs_stop()" onmouseover="simvs_start()">
+                  <br>
+
+                  Mankeerat Sidhu,
+                  Hetarth Chopra,
+                  <strong>Ansel Blume</strong>,
+                  Jeonghwan Kim,
+                  Revanth Gangi Reddy,
+                  Heng Ji
+
+                  <br><br>
+
+                  <em>CVPR</em>, 2025
+
+                  <br>
+
+                  <a href="https://arxiv.org/abs/2409.18733">arXiv</a>
+                  <p></p>
+                  <p>
+                    Exemplar images from the web can be used for highly effective training-free long-tail object detection by combining embedding heatmaps with SAM regions.
+                    This method far surpasses SOTA methods on several benchmarks.
+                  </p>
+                </td>
+              </tr>
+
+              <tr>
+                <td class="image-box">
+                  <img src="images/miracle.jpg" alt="MIRACLE">
+                </td>
+                <td class="paper-box">
+                  <a href="https://dl.acm.org/doi/10.1145/3664647.3684993">
+                    <span class="papertitle">MIRACLE: An Online, Explainable Multimodal Interactive Concept Learning System</span>
+                  </a>
+
+                  <br>
+
+                  <strong>Ansel Blume</strong>*,
+                  Khanh Duy Nguyen*,
+                  Zhenhailong Wang,
+                  Yangyi Chen,
+                  Michal Shlapentokh-Rothman,
+                  Xiaomeng Jin,
+                  Jeonghwan Kim,
+                  Zhen Zhu,
+                  Jiateng Liu,
+                  Kuan-Hao Huang,
+                  Mankeerat Sidhu,
+                  Xuanming Zhang,
+                  Vivian Liu,
+                  Raunak Sinha,
+                  Te-Lin Wu,
+                  Abhay Zala,
+                  Elias Stengel-Eskin,
+                  Da Yin,
+                  Yao Xiao,
+                  Utkarsh Mall,
+                  Zhou Yu,
+                  Kai-Wei Chang,
+                  Camille Cobb,
+                  Karrie Karahalios,
+                  Lydia Chilton,
+                  Mohit Bansal,
+                  Nanyun Peng,
+                  Carl Vondrick,
+                  Derek Hoiem,
+                  Heng Ji
+
+                  <br><br>
+
+                  <em>ACM MM Technical Demos</em>, 2024
+
+                  <br>
+
+                  <a href="https://dl.acm.org/doi/10.1145/3664647.3684993">ACM Page</a> / <a href="https://github.com/AnselBlume/ecole_miracle_mo9">Github</a>
+                  <p></p>
+                  <p>
+                    We developed MIRACLE, an interactive system for object recognition that learns concepts in real-time,
+                    highlighting key regions that distinguish objects from one another.
+                  </p>
+                </td>
+              </tr>
+
+              <tr class="highlighted-paper">
+                <td class="image-box">
+                  <img src="images/region_reps.jpg" alt="Region-based Representations Revisited">
+                </td>
+                <td class="paper-box">
+                  <a href="https://arxiv.org/abs/2402.02352">
+                    <span class="papertitle">Region-based Representations Revisited</span>
+                  </a>
+
+                  <br>
+
+                  Michal Shlapentokh-Rothman*,
+                  <strong>Ansel Blume</strong>*,
+                  Yao Xiao,
+                  Yuqun Wu,
+                  Sethuraman TV,
+                  Heyi Tao,
+                  Jae Yong Lee,
+                  Wilfredo Torres,
+                  Yu-Xiong Wang,
+                  Derek Hoiem
+
+                  <br><br>
+
+                  <em>CVPR</em>, 2024
+
+                  <br>
+
+                  <a href="https://arxiv.org/abs/2402.02352">arXiv</a> / <a href="https://regionreps.web.illinois.edu/">Project Page</a>
+                  <p></p>
+                  <p>
+                    Region features constructed by average pooling image features over SAM regions are effective on a wide range of downstream tasks.
+                  </p>
+                </td>
+              </tr>
+
+              <tr>
+                <td class="image-box">
+                  <img src="images/product_attributes.jpg" alt="Generative Models for Product Attribute Extraction">
+                </td>
+                <td class="paper-box">
+                  <a href="https://aclanthology.org/2023.emnlp-industry.55/">
+                    <span class="papertitle">Generative Models for Product Attribute Extraction</span>
+                  </a>
+
+                  <br>
+
+                  <strong>Ansel Blume</strong>,
+                  Nasser Zalmout,
+                  Heng Ji,
+                  Xian Li
+
+                  <br><br>
+
+                  <em>EMNLP Industry Track</em>, 2023
+
+                  <br>
+
+                  <a href="https://aclanthology.org/2023.emnlp-industry.55/">ACL Page</a>
+                  <p></p>
+                  <p>
+                    Generative language models can outperform extractive product attribute extraction models while having greater
+                    data efficiency and the unique ability to detect implied attributes.
+                  </p>
+                </td>
+              </tr>
+
+              <tr>
+                <td class="image-box">
+                  <img src="images/paxion.jpg" alt="Paxion: Patching Action Knowledge in Video-Language Foundation Models">
+                </td>
+                <td class="paper-box">
+                  <a href="https://arxiv.org/abs/2305.10683">
+                    <span class="papertitle">Paxion: Patching Action Knowledge in Video-Language Foundation Models</span>
+                  </a>
+
+                  <br>
+
+                  Zhenhailong Wang,
+                  <strong>Ansel Blume</strong>,
+                  Sha Li,
+                  Genglin Liu,
+                  Jaemin Cho,
+                  Zineng Tang,
+                  Mohit Bansal,
+                  Heng Ji
+
+                  <br><br>
+
+                  <em>NeurIPS</em>, 2023
+
+                  <br>
+
+                  <a href="https://arxiv.org/abs/2305.10683">arXiv</a> / <a href="https://github.com/MikeWangWZHL/Paxion">Github</a>
+                  <p></p>
+                  <p>
+                    Video-language foundation models are highly biased towards using objects for action recognition, as opposed to actually
+                    analyzing the action itself. Paxion proposes a training scheme that improves action recognition without harming performance on downstream tasks.
+                  </p>
+                </td>
+              </tr>
+
+              <tr>
+                <td class="image-box">
+                  <img src="images/measuring_security.jpg" alt="Measuring Security Practices and How They Impact Security">
+                </td>
+                <td class="paper-box">
+                  <a href="https://dl.acm.org/doi/10.1145/3355369.3355571">
+                    <span class="papertitle">Measuring Security Practices and How They Impact Security</span>
+                  </a>
+
+                  <br>
+
+                  Louis F. DeKoven,
+                  Audrey Randall,
+                  Ariana Mirian,
+                  Gautam Akiwate,
+                  <strong>Ansel Blume</strong>,
+                  Lawrence K. Saul,
+                  Aaron Schulman,
+                  Geoffrey M. Voelker,
+                  Stefan Savage
+
+                  <br><br>
+
+                  <em>IMC</em>, 2019
+
+                  <br>
+
+                  <a href="https://dl.acm.org/doi/10.1145/3355369.3355571">ACM Page</a>
+                  <p></p>
+                  <p>
+                    A large scale study on factors and security practices that help to prevent system compromise in practice.
+                  </p>
+                </td>
+              </tr>
+
+              <!-- <tr onmouseout="simvs_stop()" onmouseover="simvs_start()">
                 <td style="padding:16px;width:20%;vertical-align:middle">
                   <div class="one">
                     <div class="two" id='simvs_image'><video width=100% muted autoplay loop>
@@ -128,9 +365,9 @@
                     Simulating the world with video models lets you make inconsistent captures consistent.
                   </p>
                 </td>
-              </tr>
+              </tr> -->
 
-              <tr onmouseout="cat4d_stop()" onmouseover="cat4d_start()" bgcolor="#ffffd0">
+              <!-- <tr onmouseout="cat4d_stop()" onmouseover="cat4d_start()" bgcolor="#ffffd0">
                 <td style="padding:16px;width:20%;vertical-align:middle">
                   <div class="one">
                     <div class="two" id='cat4d_image'><video width=100% height=100% muted autoplay loop>
@@ -175,7 +412,7 @@
                     combined with a text-to-video model, this enables text-to-4D.
                   </p>
                 </td>
-              </tr>
+              </tr> -->
 
             </tbody>
           </table>

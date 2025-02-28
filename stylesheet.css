@@ -140,3 +140,24 @@ span.highlight {
     display: inline-block;
     border-radius: 10px;
 }
+
+.image-box {
+  padding: 16px;
+  width: 20%;
+  vertical-align: middle;
+}
+
+.image-box img {
+  width: 100%;
+  outline: 2px solid #000000;
+}
+
+.paper-box {
+  padding: 16px;
+  width: 80%;
+  vertical-align: middle;
+}
+
+.highlighted-paper {
+  background-color: #ffffd0;
+}
