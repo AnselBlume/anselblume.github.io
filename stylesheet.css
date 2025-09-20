@@ -161,3 +161,22 @@ span.highlight {
 .highlighted-paper {
   background-color: #ffffd0;
 }
+
+
+/* News styling */
+.news li {
+  display: flex;
+}
+
+.news-date {
+  min-width: 15ch;
+  font-style: italic;
+}
+
+.news-details {
+  flex: 1; /* fill the rest of the row */
+}
+
+li {
+  margin: 10px 0
+}
